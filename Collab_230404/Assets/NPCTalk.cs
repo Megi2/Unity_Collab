@@ -9,6 +9,8 @@ public class NPCTalk : MonoBehaviour
     void Start()
     {
         TalkPanel.SetActive(false);
+        List<Dictionary<string, object>> Talk_Dialogue = CSVReader.Read("Dialogue");
+        Debug.Log(Talk_Dialogue[1]);
     }
 
     // Update is called once per frame
