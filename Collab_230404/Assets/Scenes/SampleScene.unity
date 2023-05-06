@@ -1006,8 +1006,9 @@ GameObject:
   - component: {fileID: 760630160}
   - component: {fileID: 760630162}
   - component: {fileID: 760630163}
+  - component: {fileID: 760630164}
   m_Layer: 0
-  m_Name: CharacterMove-removebg-preview_52
+  m_Name: NPC1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1122,6 +1123,20 @@ MonoBehaviour:
   panel: {fileID: 325579052}
   nameTag: {fileID: 692816130}
   player: {fileID: 427248863}
+--- !u!114 &760630164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760630159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fb84feaa4229d543ab42d37a6d9f916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPC: {fileID: 0}
+  NPCTag: 100
 --- !u!1 &792829190
 GameObject:
   m_ObjectHideFlags: 0
