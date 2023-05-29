@@ -109,12 +109,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 528
-        width: 32
-        height: 32
+        y: 128
+        width: 100
+        height: 117
       alignment: 1
       pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -4204,15 +4204,15 @@ TextureImporter:
       House_35: -1736262106
       House_157: -97865534
       House_97: -943749148
-      House_9: 448410930
-      House_36: -2122430889
       House_169: 2082546384
+      House_9: 448410930
       House_60: 1912702556
       House_61: 401624152
       House_11: 54269991
       House_183: -1292394998
       House_44: -485863030
       House_79: 1753925822
+      House_36: -2122430889
       House_14: -1622277613
       House_155: -271858496
       House_161: -1888511958

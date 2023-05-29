@@ -1,6 +1,6 @@
 ﻿event,name,text,cg
-시작,bern,테스트용,Assets/TempAsset/Character/Bern_stand.png
-.,bern,입니다^~^,Assets/TempAsset/Character/Bern_stand.png
-.,bern,일단,Assets/TempAsset/Character/Bern_stand.png
-.,bern,조져,Assets/TempAsset/Character/Bern_stand.png
+시작,bern,테스트용,Character/Bern_stand
+.,bern,입니다^~^,Character/Bern_stand
+.,bern,일단,Character/Bern_stand
+.,bern,조져,Character/Bern_stand
 end,.,.,.
