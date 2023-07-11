@@ -379,11 +379,14 @@
 "Assets/CameraController.cs"
 "Assets/CharacterMove.cs"
 "Assets/CSVReader.cs"
+"Assets/DontDestroyOnLoad.cs"
+"Assets/DoorController.cs"
 "Assets/GameSceneMove.cs"
 "Assets/NPCAreaController.cs"
 "Assets/NPCSet.cs"
 "Assets/NPCTalk.cs"
 "Assets/StartButton.cs"
+"Assets/StoreController.cs"
 -langversion:9.0
 
 /deterministic

@@ -4,10 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public delegate void TalkEvent(int i);
 public class NPCAreaController : MonoBehaviour
 {
-    public GameObject panel;
     public GameObject nameTag;
     public NPCSet NPC;
     //public event EventHandler Talk;

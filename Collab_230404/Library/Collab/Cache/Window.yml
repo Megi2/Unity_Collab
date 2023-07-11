@@ -21,6 +21,10 @@ MonoBehaviour:
     - Assets/CameraController.cs.meta
     - Assets/CharacterMove.cs
     - Assets/CharacterMove.cs.meta
+    - Assets/DontDestroyOnLoad.cs
+    - Assets/DontDestroyOnLoad.cs.meta
+    - Assets/DoorController.cs
+    - Assets/DoorController.cs.meta
     - Assets/GameSceneMove.cs
     - Assets/GameSceneMove.cs.meta
     - Assets/NPCAreaController.cs
@@ -30,11 +34,21 @@ MonoBehaviour:
     - Assets/NPCTalk.cs
     - Assets/NPCTalk.cs.meta
     - Assets/Resources.meta
+    - Assets/Resources/Character.meta
+    - Assets/Resources/Character/Bern_stand.png
+    - Assets/Resources/Character/Bern_stand.png.meta
     - Assets/Resources/Dialogue.csv
     - Assets/Resources/Dialogue.csv.meta
+    - Assets/Resources/Font.meta
+    - Assets/Resources/Font/NotoSansKR-Regular SDF.asset
+    - Assets/Resources/Font/NotoSansKR-Regular SDF.asset.meta
+    - Assets/Resources/Font/NotoSansKR-Regular.otf
+    - Assets/Resources/Font/NotoSansKR-Regular.otf.meta
     - Assets/Scenes.meta
     - Assets/Scenes/SampleScene.unity
     - Assets/Scenes/SampleScene.unity.meta
+    - Assets/Scenes/Store.unity
+    - Assets/Scenes/Store.unity.meta
     - Assets/Scenes/main.unity
     - Assets/Scenes/main.unity.meta
     - Assets/StartButton.cs
@@ -63,11 +77,10 @@ MonoBehaviour:
     - Assets/TempAsset/Character/left.anim.meta
     - Assets/TempAsset/Character/right.anim
     - Assets/TempAsset/Character/right.anim.meta
-    - Assets/TempAsset/House.meta
-    - Assets/TempAsset/House/House.jpg
-    - Assets/TempAsset/House/House.jpg.meta
     - Assets/TempAsset/Indoor.jpg
     - Assets/TempAsset/Indoor.jpg.meta
+    - Assets/TempAsset/New Wood.prefab
+    - Assets/TempAsset/New Wood.prefab.meta
     - Assets/TempAsset/StaticTiles.png
     - Assets/TempAsset/StaticTiles.png.meta
     - Assets/TempAsset/Tiles.meta
@@ -449,10 +462,20 @@ MonoBehaviour:
     - Assets/TempAsset/Tiles/tiles_8.asset.meta
     - Assets/TempAsset/Tiles/tiles_9.asset
     - Assets/TempAsset/Tiles/tiles_9.asset.meta
+    - Assets/TempAsset/Tiles/wood.prefab
+    - Assets/TempAsset/Tiles/wood.prefab.meta
+    - Assets/TempAsset/Tiles/woodtile.asset
+    - Assets/TempAsset/Tiles/woodtile.asset.meta
     - Assets/TempAsset/tiles.jpg
     - Assets/TempAsset/tiles.jpg.meta
     - Assets/TempAsset/tiles_13.asset
     - Assets/TempAsset/tiles_13.asset.meta
+    - Assets/TempAsset/wood2.prefab
+    - Assets/TempAsset/wood2.prefab.meta
+    - Assets/TempAsset/woodtile.asset
+    - Assets/TempAsset/woodtile.asset.meta
+    - Assets/TempAsset/woodtile.jpg
+    - Assets/TempAsset/woodtile.jpg.meta
     - "Assets/TempAsset/\uCC45.png"
     - "Assets/TempAsset/\uCC45.png.meta"
     - Assets/TextMesh Pro.meta
@@ -550,7 +573,7 @@ MonoBehaviour:
     - ProjectSettings/VFXManager.asset
     - ProjectSettings/VersionControlSettings.asset
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
