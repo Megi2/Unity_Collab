@@ -19,7 +19,7 @@ private void OnCollisionStay2D(Collision2D other)
             case "Door1": {
              float time1 = Timer.instance.LimitTime;
                     if (time1> 30){//특정 시간 넘어가야 문 열림
-                        transform.position = new Vector2(10, 0);
+                        transform.position = new Vector2(25, 0);
                         
                     }
                     break;

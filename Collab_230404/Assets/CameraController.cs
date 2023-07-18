@@ -26,6 +26,17 @@ public class CameraController : MonoBehaviour
 
             // vectorA -> B까지 T의 속도로 이동
             this.transform.position = Vector3.Lerp(this.transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            //float lx =  10;
+            //float clampX = Mathf.Clamp(transform.position.x, Debug.Log(transform.position.x); , lx );
+           //Debug.Log(transform.position.x);
+            //Debug.Log(transform.position.y);
+
+            //float ly = 10;
+            //float clampY = Mathf.Clamp(transform.position.y, -ly , ly);
+
+            //this.transform.position = new Vector3(clampX, clampY, -10f); 카메라 제한 구현인데 좀 더 고민해봐야할 듯
         }
     }
+
+ 
 }
