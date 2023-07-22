@@ -10,9 +10,17 @@ public class Timer: MonoBehaviour
     public static Timer instance;
     public float LimitTime;
     public TMP_Text text_Timer;
+    void Start()
+    {
+        if (PlayerPrefs.HasKey("Lv"))
+        {
+            LimitTime = PlayerPrefs.GetFloat("Lv");
+        }
+        print("start");
+    }
     void Awake()
     {
-        if(Timer.instance==null)
+        if (Timer.instance == null)
         {
             Timer.instance = this;
         }
@@ -24,4 +32,5 @@ public class Timer: MonoBehaviour
         LimitTime += Time.deltaTime;
         text_Timer.text = "Time:" + Mathf.Round(LimitTime).ToString();
     }
+  
 }
