@@ -5,18 +5,20 @@ using UnityEngine;
 public class Savemenu : MonoBehaviour
 {
     [SerializeField] private GameObject go_BaseUI;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
         //go_BaseUI.SetActive(false);
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            CallMenu();
+            menushow();
             Debug.Log("hi");
         }
     }
@@ -39,10 +41,12 @@ public class Savemenu : MonoBehaviour
         if (go_BaseUI.activeSelf == true)
         {
             go_BaseUI.SetActive(false);
+            player.SetActive(true);
         }
         else
         {
             go_BaseUI.SetActive(true);
+            player.SetActive(false);
         }
     }
 }
