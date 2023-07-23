@@ -5,7 +5,6 @@ using UnityEngine;
 public class Savemenu : MonoBehaviour
 {
     [SerializeField] private GameObject go_BaseUI;
-    
     public GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -23,12 +22,12 @@ public class Savemenu : MonoBehaviour
             Debug.Log("hi");
         }
     }
-    private void CallMenu()
-    {
+   private void CallMenu()
+        {
 
-        go_BaseUI.SetActive(true);
-        Debug.Log("hi");
-
+            go_BaseUI.SetActive(true);
+            Debug.Log("hi");
+        
 
     }
 
@@ -37,7 +36,7 @@ public class Savemenu : MonoBehaviour
         PlayerPrefs.SetFloat("Lv", Timer.instance.LimitTime);
     }
 
-    public void menushow()
+     public void menushow()
     {
         if (go_BaseUI.activeSelf == true)
         {
@@ -51,3 +50,4 @@ public class Savemenu : MonoBehaviour
         }
     }
 }
+
