@@ -12,7 +12,14 @@ public class Door : MonoBehaviour
     [SerializeField] private GameObject Loading;
     public float Loadingtime;
     public float Endtime;
+    [SerializeField] private Vector2 location;
     public bool SceneTrue=false;
+
+    private void Start()
+    {
+        Loading = GameObject.FindWithTag("LoadingScene");
+        Loading.SetActive(false);
+    }
 
     void Update()
     {
@@ -31,8 +38,13 @@ public class Door : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D other)
     {
-        Debug.Log("Hello Unity!");
-        switch (other.gameObject.tag)//스위치문 이용
+        if (other.gameObject.tag == "Player")
+        {
+            other.transform.position = location;
+            LoadingShow();
+        }
+
+        /*switch (other.gameObject.tag)//스위치문 이용
         {
             
             case "Door1": {
@@ -50,11 +62,9 @@ public class Door : MonoBehaviour
                     LoadingShow();
                     break;
                 }
+        }*/
 
-
-        }
-
-        }
+    }
     private void OnCollisionExit2D(Collision2D collision)
     {
         
@@ -62,7 +72,6 @@ public class Door : MonoBehaviour
 
     public void LoadingShow()
     {
-        print("show");
         Loading.SetActive(true);
         //Endtime = Loadingtime;
         SceneTrue = true;

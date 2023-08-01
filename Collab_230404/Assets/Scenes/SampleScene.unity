@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 91080981}
   - component: {fileID: 91080980}
   - component: {fileID: 91080979}
+  - component: {fileID: 91080982}
   m_Layer: 0
   m_Name: Door2
   m_TagString: Door2
@@ -279,6 +280,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &91080982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91080978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e85e0235f417c4fa4403d3404db70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Loading: {fileID: 0}
+  Loadingtime: 0
+  Endtime: 0
+  location: {x: 3, y: 0}
+  SceneTrue: 0
 --- !u!1 &123303191
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,11 +310,11 @@ GameObject:
   - component: {fileID: 123303193}
   m_Layer: 5
   m_Name: LoadingScene
-  m_TagString: Untagged
+  m_TagString: LoadingScene
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &123303192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1212,7 +1230,6 @@ GameObject:
   - component: {fileID: 427248866}
   - component: {fileID: 427248865}
   - component: {fileID: 427248864}
-  - component: {fileID: 427248871}
   - component: {fileID: 427248868}
   - component: {fileID: 427248869}
   - component: {fileID: 427248870}
@@ -1382,22 +1399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d2322a163a9ae49a37ea997f1b604c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &427248871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427248863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76e85e0235f417c4fa4403d3404db70c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Loading: {fileID: 123303191}
-  Loadingtime: 0
-  Endtime: 0
-  SceneTrue: 0
 --- !u!1 &470790982
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,7 +1812,7 @@ GameObject:
   - component: {fileID: 634598292}
   - component: {fileID: 634598291}
   m_Layer: 0
-  m_Name: Door1 (1)
+  m_Name: DoorToStore
   m_TagString: Door1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1834,7 +1835,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.3525, y: 0.3525}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1884,7 +1885,7 @@ SpriteRenderer:
   m_SortingLayerID: 927631959
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1935257947, guid: 557aa2a2b9bff06429256b8e0b49e6c8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03455903ae9028c40942cc8c8112736c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1903,8 +1904,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634598290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.99, y: -4.882, z: 5.904044}
-  m_LocalScale: {x: 1.1726, y: 1.0447613, z: 1}
+  m_LocalPosition: {x: 1.79, y: -4.32, z: 5.904044}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2290,6 +2291,7 @@ GameObject:
   - component: {fileID: 765886511}
   - component: {fileID: 765886510}
   - component: {fileID: 765886512}
+  - component: {fileID: 765886513}
   m_Layer: 0
   m_Name: Door1
   m_TagString: Door1
@@ -2390,6 +2392,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &765886513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765886509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e85e0235f417c4fa4403d3404db70c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Loading: {fileID: 0}
+  Loadingtime: 0
+  Endtime: 0
+  location: {x: 25, y: 0}
+  SceneTrue: 0
 --- !u!1 &788317227
 GameObject:
   m_ObjectHideFlags: 0
