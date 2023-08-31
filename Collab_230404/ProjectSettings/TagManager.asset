@@ -9,6 +9,7 @@ TagManager:
   - NameTag
   - Door1
   - Door2
+  - LoadingScene
   layers:
   - Default
   - TransparentFX
