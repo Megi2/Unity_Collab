@@ -9,7 +9,7 @@ TagManager:
   - NameTag
   - Door1
   - Door2
-  - LoadingScene
+  - Something
   layers:
   - Default
   - TransparentFX
@@ -47,6 +47,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer 1
+  - name: layer1
     uniqueID: 927631959
+    locked: 0
+  - name: layer2
+    uniqueID: 2832534497
     locked: 0
