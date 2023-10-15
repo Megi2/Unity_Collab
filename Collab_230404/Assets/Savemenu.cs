@@ -5,6 +5,7 @@ using UnityEngine;
 public class Savemenu : MonoBehaviour
 {
     [SerializeField] private GameObject go_BaseUI;
+    [SerializeField] private GameObject Inven_Interface;
     public GameObject player;
     // Start is called before the first frame update
     void Start()
@@ -14,12 +15,16 @@ public class Savemenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             menushow();
             Debug.Log("hi");
+        }
+        else if (Input.GetKeyDown(KeyCode.I))
+        {
+            Inventory_Show();
         }
     }
    private void CallMenu()
@@ -49,5 +54,20 @@ public class Savemenu : MonoBehaviour
             player.SetActive(false);
         }
     }
+    public void Inventory_Show()
+    {
+        if (Inven_Interface.activeSelf == true)
+        {
+            Inven_Interface.SetActive(false);
+            player.SetActive(true);
+            Debug.Log("H");
+        }
+        else
+        {
+            Inven_Interface.SetActive(true);
+            player.SetActive(false);
+        }
+    }
 }
+
 
