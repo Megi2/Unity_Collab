@@ -22,13 +22,16 @@ public class NPCTalk : MonoBehaviour
     public TextMeshProUGUI talk_text;
     public TextMeshProUGUI name_text;
 
+    public Tutorial tutorial;
+    public GameObject t;
+
     public GameObject player;
     public int count = 0;
     public List<Dictionary<string, object>> Talk_Dialogue;
     // Start is called before the first frame update
     void Start()
     {
-
+        tutorial = t.GetComponent<Tutorial>();
         TalkPanel = gameObject;
         TalkPanel.SetActive(false);
         Transform Text = transform.Find("text/Text");
@@ -37,7 +40,7 @@ public class NPCTalk : MonoBehaviour
         portrait_image = Portrait.GetComponent<Image>();
         talk_text = Text.GetComponent<TextMeshProUGUI>();
         name_text = Name.GetComponent<TextMeshProUGUI>();
-        Talk_Dialogue = CSVReader.Read("Dialogue");
+        Talk_Dialogue = CSVReader.Read("main-e0~e1");
     }
 
     //param object sender, EventArgs e
@@ -54,8 +57,10 @@ public class NPCTalk : MonoBehaviour
         if (Talk_Dialogue[count]["event"].ToString() == "end")
         {
             TalkStop();
+            tutorial.showE();
             return;
         }
+
         portrait_image.sprite = Resources.Load<Sprite>(Talk_Dialogue[count]["cg"].ToString()) as Sprite;
         StartCoroutine(Typing(Talk_Dialogue[count]["text"].ToString()));
         //talk_text.text = Talk_Dialogue[count]["text"].ToString();

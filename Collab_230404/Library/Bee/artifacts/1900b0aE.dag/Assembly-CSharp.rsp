@@ -386,6 +386,8 @@
 "Assets/DoorController.cs"
 "Assets/Game.cs"
 "Assets/GameSceneMove.cs"
+"Assets/InputEvent.cs"
+"Assets/Narrtion.cs"
 "Assets/NPCAreaController.cs"
 "Assets/NPCmove.cs"
 "Assets/NPCSet.cs"
@@ -394,6 +396,7 @@
 "Assets/StartButton.cs"
 "Assets/StoreController.cs"
 "Assets/Timer.cs"
+"Assets/Tutorial.cs"
 -langversion:9.0
 
 /deterministic

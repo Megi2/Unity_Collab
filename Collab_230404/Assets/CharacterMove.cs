@@ -18,12 +18,12 @@ public class CharacterMove : MonoBehaviour
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
         if (inputX != 0 || inputY != 0)
-            anim.SetBool("ismove", true);
+            anim.SetBool("IsMove", true);
         else
-            anim.SetBool("ismove", false);
+            anim.SetBool("IsMove", false);
 
-        anim.SetFloat("inputX", inputX);
-        anim.SetFloat("inputY", inputY);
+        anim.SetFloat("InputX", inputX);
+        anim.SetFloat("InputY", inputY);
 
         transform.Translate(new Vector2(inputX, inputY) * Time.deltaTime * moveSpeed);
     }
